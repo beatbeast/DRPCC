@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en" class="full-height">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Windmill Ventures Limited</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/laolu.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="images/logo1.jpg">
+    </head>
+<style>
+.error {color: #FF0000;}
+</style>
+<body>
+    
+    <!--Main Navigation-->
+    <header>
+        
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar" id="mynavbar">
+            <div class="container">
+                <img src="images/logo1.jpg" alt="Logo" width="40px">
+                <a class="navbar-brand" href="laolu.html"><strong>Windmill Ventures Limited</strong></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
+        </header><br> <br/>
+        <br><br/>
+                            
+<section class="section">
+
+    <!--Section heading-->
+    <h2 class="section-heading h1 pt-4">Contact us</h2>
+    <!--Section description-->
+    <p class="section-description">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
+        matter of hours to help you.</p>
+
+    <div class="row">
+
+        <!--Grid column-->
+        <div class="col-md-8 col-xl-9">
+            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form">
+                            <input type="text" id="name" name="name" class="form-control">
+                            <label for="name" class="">Your name</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form">
+                            <input type="text" id="email" name="email" class="form-control">
+                            <label for="email" class="">Your email</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form">
+                            <input type="text" id="subject" name="subject" class="form-control">
+                            <label for="subject" class="">Subject</label>
+                        </div>
+                    </div>
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-12">
+
+                        <div class="md-form">
+                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                            <label for="message">Your message</label>
+                        </div>
+
+                    </div>
+                </div>
+                <!--Grid row-->
+
+            </form>
+
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" name="updates" id="updates" value="1">
+                <label for="updates" class="form-check-label">Notify me about new updates</label>
+            </div>
+
+            <div id="feedback">
+                <h5><strong>How did you get to know about us?</strong></h5>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" name="channel[]" id="checkbox1" value="nl">
+                    <label for="checkbox1" class="form-check-label">Newsletter</label>
+                </div>
+
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" name="channel[]" id="checkbox2" value="ad">
+                    <label for="checkbox2" class="form-check-label">Advertisement</label>
+                </div>
+
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" name="channel[]" id="checkbox3" value="ot">
+                    <label for="checkbox3" class="form-check-label">Other</label>
+                </div>
+            </div>
+            <div>
+                <h5><strong>How do you want us to contact you?</strong></h5>
+                <div class="form-group">
+                    <input type="radio" id="radio1" name="cmethod" value="phone" checked>
+                    <label for="radio1">Phone</label>
+                </div>
+
+                <div class="form-group">
+                    <input type="radio" id="radio2"  name="cmethod" value="mail">
+                    <label for="radio2">Email</label>
+                </div>
+
+                <div class="form-group">
+                    <input type="radio" id="radio3"  name="cmethod" value="post">
+                    <label for="radio3">Post</label>
+                </div>
+            </div>
+            <div class="center-on-small-only">
+                <a class="btn btn-primary" onclick="validateForm()">Send</a>
+            </div>
+            <div class="status"></div>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-4 col-xl-3">
+            <ul class="contact-icons">
+                <li><i class="fa fa-map-marker fa-2x"></i>
+                    <p>Lagos, Lagos State, Nigeria.</p>
+                </li>
+
+                <li><i class="fa fa-phone fa-2x"></i>
+                    <p>+ 234 808 833 6699</p>
+                </li>
+
+                <li><i class="fa fa-envelope fa-2x"></i>
+                    <p>contact@windmillventureslimited.com</p>
+                </li>
+            </ul>
+        </div>
+        <!--Grid column-->
+
+    </div>
+
+</section>
+<!--Section: Contact v.2-->
+
+<script>
+function validateForm() {
+
+document.getElementById('status').innerHTML = "Sending...";
+ formData = {
+    'name'     : $('input[name=name]').val(),
+    'email'    : $('input[name=email]').val(),
+    'subject'  : $('input[name=subject]').val(),
+    'message'  : $('textarea[name=message]').val(),
+    'updates'  : $('input:checkbox[name=updates]').is(':checked')
+    'cmethod'  : $('input:radio[name=cmethod]:checked').val()
+    'channel'  : channels
+};
+
+
+$.ajax({
+url : "mail.php",
+type: "POST",
+data : formData,
+success: function(data, textStatus, jqXHR)
+{
+
+    $('#status').text(data.message);
+    if (data.code) //If mail was sent successfully, reset the form.
+    $('#contact-form').closest('form').find("input[type=text], textarea").val("");
+},
+error: function (jqXHR, textStatus, errorThrown)
+{
+    $('#status').text(jqXHR);
+}
+});
+}
+</script>
+<style>
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+</style>
+
+<div class="footer">
+  <p><center><!--©--> &copy; 2018 Copyright: Windmill Ventures Limited. Designed by: @beatbeast</center> </p>
+</div>
+    </body>
+
+    </html>
